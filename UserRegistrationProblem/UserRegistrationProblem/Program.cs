@@ -8,14 +8,15 @@ namespace UserRegistrationProblem
         {
             Console.WriteLine("welcome to UserRegistrationProblem day 24 assignment");
 
-
-            
             Console.WriteLine("Enter the first name = ");
-            
-            UserRegistrationRegex userRegistrationRegex = new UserRegistrationRegex();
-
             string firstName = Console.ReadLine();
+            Console.WriteLine("Enter the last name = ");
+            string lastName = Console.ReadLine();
+            UserRegistrationRegex userRegistrationRegex = new UserRegistrationRegex();
             Console.WriteLine(userRegistrationRegex.validateFirstName(firstName));
+            Console.WriteLine(userRegistrationRegex.validatelastName(lastName));
+
+
         }
     }
 }

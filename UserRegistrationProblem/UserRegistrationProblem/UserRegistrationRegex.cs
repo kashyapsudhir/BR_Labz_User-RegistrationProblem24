@@ -15,5 +15,9 @@ namespace UserRegistrationProblem
         {
             return Regex.IsMatch(firstName, VALIDNAMEPATTERN);
         }
+        public bool validatelastName(String firstName)
+        {
+            return Regex.IsMatch(firstName, VALIDNAMEPATTERN);
+        }
     }
 }
