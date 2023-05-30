@@ -19,21 +19,26 @@ namespace UserRegistrationProblem
             // Console.WriteLine("Enter the valid email = ");
             //string email = Console.ReadLine();
 
-            Console.WriteLine("Enter your Phone number, and check valid or not");
-            Console.WriteLine("Enter the mobile number this Pattern=\n [0-9]{2}[ ][0-9]{10}$ ");
-            
-            
+            //Console.WriteLine("Enter your Phone number, and check valid or not");
+            //Console.WriteLine("Enter the mobile number this Pattern=\n [0-9]{2}[ ][0-9]{10}$ ");
+
+            Console.WriteLine("Enter the password = ");
+            string preDefinedPassword = Console.ReadLine();
+
+
 
             UserRegistrationRegex userRegistrationRegex = new UserRegistrationRegex();
             //Console.WriteLine(userRegistrationRegex.validateFirstName(firstName));
             //Console.WriteLine(userRegistrationRegex.validatelastName(lastName));
             //Console.WriteLine(userRegistrationRegex.validatEmail(email));
-            Console.WriteLine(userRegistrationRegex.validateMobileFormat);
+            //Console.WriteLine(userRegistrationRegex.validateMobileFormat);
 
-            
-            string TakeNumber = Console.ReadLine();
-            userRegistrationRegex.validateMobileFormat(TakeNumber);
 
+            //string TakeNumber = Console.ReadLine();
+            //userRegistrationRegex.validateMobileFormat(TakeNumber);
+
+
+            Console.WriteLine(userRegistrationRegex.validatePreDefinedPassword(preDefinedPassword));
 
 
         }
