@@ -22,6 +22,7 @@ namespace UserRegistrationProblem
             //Console.WriteLine("Enter your Phone number, and check valid or not");
             //Console.WriteLine("Enter the mobile number this Pattern=\n [0-9]{2}[ ][0-9]{10}$ ");
 
+           
             Console.WriteLine("Enter the password = ");
             string preDefinedPassword = Console.ReadLine();
 
