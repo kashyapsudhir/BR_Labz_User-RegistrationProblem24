@@ -14,8 +14,9 @@ namespace UserRegistrationProblem
         //public static string VALIDNAMEPATTERN = "^[A-Z]{1}[a-z]{2,}$"; //UC-1
         //public static string EMAILPATTERN = "^[0-9a-zA-z]+([._+-][0-9a-zA-z]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2})$";
         //public static string PhoneNumberRules = "^[0-9]{2}[ ][0-9]{10}$";
-        //public static string PASSWORDRULE1 = "[A-Za-z]{8,}";
-        public static string PASSWORDRULE1 = "^[A-Z]{1}[a-z]{7,}";
+        //public static string PASSWORDRULE1 = "[A-Za-z]{8,}";//UC5
+        //public static string PASSWORDRULE1 = "^[A-Z]{1}[a-z]{7,}";//UC6
+        public static string PASSWORDRULE = "^[A-Z]{1}[0-9]{1}[a-z]{6,}";//UC7
 
 
 
@@ -50,7 +51,7 @@ namespace UserRegistrationProblem
         //UC6
         public bool validatePreDefinedPassword(String preDefinedPassword)
         {
-            return Regex.IsMatch(preDefinedPassword, PASSWORDRULE1);
+            return Regex.IsMatch(preDefinedPassword, PASSWORDRULE);
         }
 
 
