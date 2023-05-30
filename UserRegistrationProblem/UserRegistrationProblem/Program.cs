@@ -16,15 +16,15 @@ namespace UserRegistrationProblem
             //Console.WriteLine("Enter the last name = ");
             //string lastName = Console.ReadLine();
 
-            // Console.WriteLine("Enter the valid email = ");
-            //string email = Console.ReadLine();
+            Console.WriteLine("Enter the valid email = ");
+            string email = Console.ReadLine();
 
             //Console.WriteLine("Enter your Phone number, and check valid or not");
             //Console.WriteLine("Enter the mobile number this Pattern=\n [0-9]{2}[ ][0-9]{10}$ ");
 
-           
-            Console.WriteLine("Enter the password = ");
-            string preDefinedPassword = Console.ReadLine();
+
+            //Console.WriteLine("Enter the password = ");
+            //string preDefinedPassword = Console.ReadLine();
 
 
 
@@ -39,7 +39,13 @@ namespace UserRegistrationProblem
             //userRegistrationRegex.validateMobileFormat(TakeNumber);
 
 
-            Console.WriteLine(userRegistrationRegex.validatePreDefinedPassword(preDefinedPassword));
+            //Console.WriteLine(userRegistrationRegex.validatePreDefinedPassword(preDefinedPassword));
+
+            Console.WriteLine("Email sample validator");
+            EmailTypes emailTypes = new EmailTypes();
+            emailTypes.validateEmail();
+
+
 
 
         }
